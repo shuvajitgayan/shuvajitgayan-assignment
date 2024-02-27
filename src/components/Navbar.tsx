@@ -5,7 +5,9 @@ import { IconHome, IconMessage, IconUser, } from "@tabler/icons-react";
 import { GiSkills } from "react-icons/gi";
 import { GoProject } from "react-icons/go";
 
+
 export default function Navbar(){
+
     const navItems = [
         {
           name: "Home",
@@ -41,9 +43,7 @@ export default function Navbar(){
       ];
       return (
         <>
-          <nav className="bg-slate-700 h-[40px]">
-
-          </nav>
+          
           <div className="relative  w-full">
             <FloatingNav navItems={navItems} className="bg-black"/>
           </div>

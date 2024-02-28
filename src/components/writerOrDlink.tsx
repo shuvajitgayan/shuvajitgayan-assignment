@@ -7,25 +7,25 @@ export function TypewriterDlink() {
     },
     {
       text: "Web",
+      className: "text-blue-500 text-red-700",
+
     },
     {
       text: "Devloper",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500 dark:text-blue-500 font-semibold",
 
     },
     
   ];
   return (
-    <div className="flex flex-col mx-auto">
+    <div className="flex flex-col items-center justify-center mb-3">
       
-      <TypewriterEffectSmooth words={words} />
+      <TypewriterEffectSmooth words={words} className="mx-auto"/>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-        <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
-          Join now
+        <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm hover:bg-slate-600 hover:text-slate-400">
+          Resume
         </button>
-        <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
-          Signup
-        </button>
+        
       </div>
     </div>
   );

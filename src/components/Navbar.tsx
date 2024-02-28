@@ -20,17 +20,17 @@ export default function Navbar(){
           icon: <IconUser className="h-4 w-4 text-neutral-350 dark:text-white" />,
         },
         {
+          name: "Project",
+          link: "/project",
+          icon: (
+            <GoProject className="h-4 w-4 text-neutral-350 dark:text-white" />
+          ),
+        },
+        {
           name: "Skils",
           link: "/skils",
           icon: (
             <GiSkills className="h-4 w-4 text-neutral-350 dark:text-white" />
-          ),
-        },
-        {
-          name: "Project",
-          link: "/skils",
-          icon: (
-            <GoProject className="h-4 w-4 text-neutral-350 dark:text-white" />
           ),
         },
         {
@@ -44,7 +44,7 @@ export default function Navbar(){
       return (
         <>
           
-          <div className="relative  w-full">
+          <div className="relative  w-full sm:hidden">
             <FloatingNav navItems={navItems} className="bg-black"/>
           </div>
         </>

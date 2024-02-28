@@ -9,7 +9,7 @@ export default function Navbar2({ className }: { className?: string }){
 
     return(
         <>
-            <nav className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
+            <nav className={cn("fixed top-10 inset-x-0 max-w-xl mx-auto z-50", className)}>
                 <Menu setActive={setActive}>
                     <Link href={"/"}>
                         <MenuItem setActive={setActive} active={active} item="Home">
@@ -33,7 +33,7 @@ export default function Navbar2({ className }: { className?: string }){
                     </Link>
                     <Link href={"/contact"}>
                         <MenuItem setActive={setActive} active={active} item="Contact">
-                            <HoveredLink href={'/skils'}>Connect with me</HoveredLink>
+                            <HoveredLink href={'/contact'}>Connect with me</HoveredLink>
                         </MenuItem>
                     </Link>
                 </Menu>
